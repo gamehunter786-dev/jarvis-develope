@@ -1,0 +1,155 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #07131d;
+  color: #eafaff;
+  line-height: 1.6;
+}
+
+header {
+  background: #0b1d2a;
+  padding: 18px 7%;
+  border-bottom: 1px solid #00eaff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header h2 {
+  color: #00eaff;
+  margin-bottom: 12px;
+}
+
+nav {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: #00eaff;
+}
+
+section {
+  padding: 55px 7%;
+  scroll-margin-top: 130px;
+}
+
+.hero {
+  text-align: center;
+  padding-top: 85px;
+  padding-bottom: 85px;
+  background: linear-gradient(135deg, #07131d, #10344a);
+}
+
+.hero h1 {
+  font-size: clamp(32px, 6vw, 55px);
+  color: #00eaff;
+}
+
+.hero p {
+  max-width: 650px;
+  margin: 15px auto;
+  color: #c0d5df;
+}
+
+.btn {
+  display: inline-block;
+  margin: 8px;
+  padding: 11px 19px;
+  background: #00eaff;
+  color: #07131d;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: white;
+}
+
+h2.section-title {
+  color: #00eaff;
+  margin-bottom: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 18px;
+}
+
+.card {
+  background: #102432;
+  border: 1px solid #244555;
+  border-radius: 12px;
+  padding: 22px;
+  overflow-wrap: anywhere;
+}
+
+.card h3 {
+  color: #00eaff;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: #c5d5df;
+  margin-bottom: 12px;
+}
+
+code {
+  color: #7df9ff;
+  overflow-wrap: anywhere;
+}
+
+pre {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  background: #041018;
+  padding: 13px;
+  border-radius: 8px;
+  margin: 12px 0;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  background: #07131d;
+  border: 1px solid #00eaff;
+  color: white;
+  border-radius: 7px;
+}
+
+#searchResults {
+  margin-top: 18px;
+  color: #c5d5df;
+}
+
+footer {
+  text-align: center;
+  background: #0b1d2a;
+  padding: 25px;
+  border-top: 1px solid #00eaff;
+}
+
+footer a {
+  color: #00eaff;
+  margin: 8px;
+  text-decoration: none;
+}
