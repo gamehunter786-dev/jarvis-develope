@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>J.A.R.V.I.S Developer Hub</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h2>🤖 J.A.R.V.I.S Hub</h2>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#repository">GitHub Repo</a>
+    <a href="#python">Python IDE</a>
+    <a href="#libraries">Libraries</a>
+    <a href="#errors">Errors</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<main>
+
+  <section id="home" class="hero">
+    <h1>J.A.R.V.I.S Developer Hub</h1>
+
+    <p>
+      Your central place for building J.A.R.V.I.S,
+      learning Python, installing libraries and
+      fixing common setup errors.
+    </p>
+
+    <a class="btn" href="#repository">Explore Repository</a>
+    <a class="btn" href="#errors">Fix Errors</a>
+  </section>
+
+  <section id="repository">
+    <h2 class="section-title">📁 My GitHub Repository</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>J.A.R.V.I.S AI Assistant</h3>
+        <p>
+          Explore my J.A.R.V.I.S Python project,
+          source code, features and updates.
+        </p>
+
+        <a class="btn"
+           href="https://github.com/YOUR-USERNAME/YOUR-REPO"
+           target="_blank" rel="noopener noreferrer">
+          View Repository
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="python">
+    <h2 class="section-title">🐍 Python IDE Setup</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Pydroid 3 (Android)</h3>
+        <p>Write and run Python programs on your Android phone.</p>
+
+        <a class="btn"
+           href="https://play.google.com/store/apps/details?id=ru.iiec.pydroid3"
+           target="_blank" rel="noopener noreferrer">
+          Get Pydroid 3
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>Python 3.13</h3>
+        <p>
+          Check Python versions and official installation
+          instructions. Some libraries may need compatible
+          versions or extra setup.
+        </p>
+
+        <a class="btn"
+           href="https://www.python.org/downloads/"
+           target="_blank" rel="noopener noreferrer">
+          Python Downloads
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="libraries">
+    <h2 class="section-title">📦 Python Libraries</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>Wikipedia</h3>
+        <p>Search Wikipedia articles from Python.</p>
+        <pre>pip install wikipedia</pre>
+        <a href="https://pypi.org/project/wikipedia/"
+           target="_blank" rel="noopener noreferrer">Library details ↗</a>
+      </div>
+
+      <div class="card">
+        <h3>Speech Recognition</h3>
+        <p>Convert supported speech input into text.</p>
+        <pre>pip install SpeechRecognition</pre>
+        <a href="https://pypi.org/project/SpeechRecognition/"
+           target="_blank" rel="noopener noreferrer">Library details ↗</a>
+      </div>
+
+      <div class="card">
+        <h3>Text to Speech</h3>
+        <p>Make your assistant speak using pyttsx3.</p>
+        <pre>pip install pyttsx3</pre>
+        <a href="https://pypi.org/project/pyttsx3/"
+           target="_blank" rel="noopener noreferrer">Library details ↗</a>
+        <p>Android may require additional platform support.</p>
+      </div>
+
+      <div class="card">
+        <h3>Requests</h3>
+        <p>Send HTTP requests to supported web services.</p>
+        <pre>pip install requests</pre>
+        <a href="https://pypi.org/project/requests/"
+           target="_blank" rel="noopener noreferrer">Library details ↗</a>
+      </div>
+
+      <div class="card">
+        <h3>Date and Time</h3>
+        <p>Python's built-in datetime module needs no installation.</p>
+        <pre>import datetime</pre>
+      </div>
+
+      <div class="card">
+        <h3>Installation Tip</h3>
+        <p>
+          Use the Pydroid 3 Pip menu or terminal if available.
+          Check library compatibility with your Python version.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="errors">
+    <h2 class="section-title">🛠️ Common J.A.R.V.I.S Errors</h2>
+
+    <input type="text" id="errorSearch"
+           placeholder="Search errors...">
+
+    <div class="grid" id="errorList">
+
+      <div class="card error-card">
+        <h3>ModuleNotFoundError</h3>
+        <p>Python cannot find an imported library.</p>
+        <pre>pip install library_name</pre>
+        <p>Replace library_name with the actual package name.</p>
+      </div>
+
+      <div class="card error-card">
+        <h3>SyntaxError</h3>
+        <p>Check missing colons, brackets and quotation marks.</p>
+      </div>
+
+      <div class="card error-card">
+        <h3>IndentationError</h3>
+        <p>Use consistent indentation, normally four spaces per level.</p>
+      </div>
+
+      <div class="card error-card">
+        <h3>API Key Error</h3>
+        <p>Check the service's API key and configuration. Never publish secret keys.</p>
+      </div>
+
+      <div class="card error-card">
+        <h3>Microphone Not Working</h3>
+        <p>Check microphone permissions and library compatibility.</p>
+      </div>
+
+      <div class="card error-card">
+        <h3>Python Version Error</h3>
+        <p>
+          Some packages may not support Python 3.13
+          or may require additional build tools.
+        </p>
+      </div>
+
+    </div>
+
+    <p id="searchResults"></p>
+  </section>
+
+  <section id="contact">
+    <h2 class="section-title">🌐 Connect With Me</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>GitHub</h3>
+        <p>Explore my code and future projects.</p>
+
+        <a class="btn"
+           href="https://github.com/gamehunter-dev"
+           target="_blank" rel="noopener noreferrer">
+          My GitHub
+        </a>
+      </div>
+
+      <div class="card">
+        <h3>YouTube</h3>
+        <p>Watch my coding tutorials, Python projects and J.A.R.V.I.S videos.</p>
+
+        <a class="btn"
+           href="https://www.youtube.com/@gamehunter-dev"
+           target="_blank" rel="noopener noreferrer">
+          My YouTube
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <p>J.A.R.V.I.S Developer Hub © 2026</p>
+  <p>Built with HTML, CSS and JavaScript 🤖</p>
+  <a href="#home">Back to Top ↑</a>
+</footer>
+
+<script>
+  const searchInput = document.getElementById("errorSearch");
+  const errorCards = document.querySelectorAll(".error-card");
+  const results = document.getElementById("searchResults");
+
+  searchInput.addEventListener("input", function() {
+    const searchText = searchInput.value.toLowerCase();
+    let visibleCount = 0;
+
+    errorCards.forEach(function(card) {
+      const matches = card.textContent.toLowerCase()
+        .includes(searchText);
+
+      card.style.display = matches ? "block" : "none";
+
+      if (matches) {
+        visibleCount++;
+      }
+    });
+
+    results.textContent = visibleCount + " error guide(s) found.";
+  });
+</script>
+
+</body>
+</html>
